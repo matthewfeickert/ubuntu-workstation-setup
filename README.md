@@ -16,8 +16,11 @@ sudo apt update && sudo apt install $(cat apt.txt | cut -f1 -d "#" | sed '/^$/d'
 6. Restart computer
 7. Install [Oh My Zsh](https://ohmyz.sh/) and configure it for terminal.
 8. Restart computer.
-
+9. Install [`pyenv`][pyenv-github] and [`pyenv-virtualenv`][pyenv-virtualenv-github]
 
 
 * `mkdir -p ~/build_src`
 * `bash build_pyenv_python.sh`
+
+[pyenv-github]: https://github.com/pyenv/pyenv
+[pyenv-virtualenv-github]: https://github.com/pyenv/pyenv-virtualenv
