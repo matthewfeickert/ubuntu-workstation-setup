@@ -22,10 +22,13 @@ sudo apt update && sudo apt install $(cat apt.txt | cut -f1 -d "#" | sed '/^$/d'
 * Install Python
 * `pyenv virtualenv 3.10.4 base`
 * `pyenv virtualenv 3.10.4 pipx`
+* `pyenv virtualenv 3.10.4 ROOT-build`
 * `mkdir -p ~bin && cp $dotfiles/bin/pipx ~/bin/pipx`
 * `chmod +x ~/bin/pipx`
 * `pipx install <everything in $dotfiles/pipx-installs.txt>`
 * Clone [ROOT-build-recipes][ROOT-build-recipes-github] under `~/build_src` (summarize everything in the ROOT-build-recipes repo)
+   * `pyenv activate ROOT-build && python -m pip install --upgrade pip setuptools wheel`
+   * `python -m pip install numpy Pygments PyYAML`
    * copy version out that you want to `build_src`
    * `bash build_ROOT.sh 2>&1 | tee root_build.log`
    * Source `${HOME}/bin/root-cern/bin/thisroot.sh` in profile
