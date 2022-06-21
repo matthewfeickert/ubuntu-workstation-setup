@@ -32,6 +32,12 @@ sudo apt update && sudo apt install $(cat apt.txt | cut -f1 -d "#" | sed '/^$/d'
    * copy version out that you want to `build_src`
    * `bash build_ROOT.sh 2>&1 | tee root_build.log`
    * Source `${HOME}/bin/root-cern/bin/thisroot.sh` in profile
+* Download and install [Zotero][zotero-website]
+   * Download from download page: https://www.zotero.org/download/
+   * Unpack
+   * `sudo cp -r <zotero directory> /opt/zotero`
+   * `sudo ./set_launcher_icon`
+   * `ln -s /opt/zotero/zotero.desktop ~/.local/share/applications/zotero.desktop`
 
 ---
 
@@ -43,3 +49,4 @@ sudo apt update && sudo apt install $(cat apt.txt | cut -f1 -d "#" | sed '/^$/d'
 [pyenv-github]: https://github.com/pyenv/pyenv
 [pyenv-virtualenv-github]: https://github.com/pyenv/pyenv-virtualenv
 [ROOT-build-recipes-github]: https://github.com/matthewfeickert/ROOT-build-recipes
+[zotero-website]: https://www.zotero.org/support/installation
