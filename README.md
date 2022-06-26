@@ -38,6 +38,7 @@ sudo apt update && sudo apt install $(cat apt.txt | cut -f1 -d "#" | sed '/^$/d'
    * `sudo cp -r <zotero directory> /opt/zotero`
    * `sudo ./set_launcher_icon`
    * `ln -s /opt/zotero/zotero.desktop ~/.local/share/applications/zotero.desktop`
+* Download and install [Inkscape][inkscape-website]
 
 ---
 
@@ -50,3 +51,4 @@ sudo apt update && sudo apt install $(cat apt.txt | cut -f1 -d "#" | sed '/^$/d'
 [pyenv-virtualenv-github]: https://github.com/pyenv/pyenv-virtualenv
 [ROOT-build-recipes-github]: https://github.com/matthewfeickert/ROOT-build-recipes
 [zotero-website]: https://www.zotero.org/support/installation
+[inkscape-website]: https://inkscape.org/release/inkscape-1.2/gnulinux/ubuntu/ppa/dl/
