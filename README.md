@@ -39,6 +39,7 @@ sudo apt update && sudo apt install $(cat apt.txt | cut -f1 -d "#" | sed '/^$/d'
    * `sudo ./set_launcher_icon`
    * `ln -s /opt/zotero/zotero.desktop ~/.local/share/applications/zotero.desktop`
 * Download and install [Inkscape][inkscape-website]
+* Download and install [Signal][signal-website]
 
 ---
 
@@ -52,3 +53,4 @@ sudo apt update && sudo apt install $(cat apt.txt | cut -f1 -d "#" | sed '/^$/d'
 [ROOT-build-recipes-github]: https://github.com/matthewfeickert/ROOT-build-recipes
 [zotero-website]: https://www.zotero.org/support/installation
 [inkscape-website]: https://inkscape.org/release/inkscape-1.2/gnulinux/ubuntu/ppa/dl/
+[signal-website]: https://signal.org/download/
