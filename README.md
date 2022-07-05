@@ -40,6 +40,7 @@ sudo apt update && sudo apt install $(cat apt.txt | cut -f1 -d "#" | sed '/^$/d'
    * `ln -s /opt/zotero/zotero.desktop ~/.local/share/applications/zotero.desktop`
 * Download and install [Inkscape][inkscape-website]
 * Download and install [Signal][signal-website]
+* Download and install the [GitHub CLI (`gh`)][gh-github]
 
 ---
 
@@ -54,3 +55,4 @@ sudo apt update && sudo apt install $(cat apt.txt | cut -f1 -d "#" | sed '/^$/d'
 [zotero-website]: https://www.zotero.org/support/installation
 [inkscape-website]: https://inkscape.org/release/inkscape-1.2/gnulinux/ubuntu/ppa/dl/
 [signal-website]: https://signal.org/download/
+[gh-github]: https://github.com/cli/cli/blob/trunk/docs/install_linux.md
