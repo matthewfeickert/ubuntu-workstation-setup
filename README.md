@@ -41,6 +41,13 @@ sudo apt update && sudo apt install $(cat apt.txt | cut -f1 -d "#" | sed '/^$/d'
 * Download and install [Inkscape][inkscape-website]
 * Download and install [Signal][signal-website]
 * Download and install the [GitHub CLI (`gh`)][gh-github]
+* Download and install [LaTeX][tex-live-website]
+   * `cd /tmp`
+   * `wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz`
+   * `zcat install-tl-unx.tar.gz | tar xf -`
+   * `cd install-tl-*`
+   * `perl ./install-tl --no-interaction`
+   * Add `/usr/local/texlive/YYYY/bin/x86_64-linux` to `PATH`
 
 ---
 
@@ -56,3 +63,4 @@ sudo apt update && sudo apt install $(cat apt.txt | cut -f1 -d "#" | sed '/^$/d'
 [inkscape-website]: https://inkscape.org/release/inkscape-1.2/gnulinux/ubuntu/ppa/dl/
 [signal-website]: https://signal.org/download/
 [gh-github]: https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+[tex-live-website]: https://www.tug.org/texlive/quickinstall.html
